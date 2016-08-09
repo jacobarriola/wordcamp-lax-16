@@ -1,0 +1,167 @@
+////////////////////////////////////////////////////////////////////////////////
+// Baseline
+////////////////////////////////////////////////////////////////////////////////
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+}
+
+
+
+
+
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+// Social
+////////////////////////////////////////////////////////////////////////////////
+
+.icon-social {
+  font-size: 100px;
+  color: color('pink');
+  transition: 300ms ease-in-out;
+  //hover
+
+
+}
+//
+// .social-list {
+//   @include reset-list;
+//   display: flex;
+//
+//   li {
+//     background-color: color('black');
+//     padding: 2em;
+//     border-radius: 50%;
+//     margin-right: 1em;
+//
+//     &:hover {
+//       .icon-social {
+//         color: color('blue');
+//       }
+//     }
+//   }
+// }
+
+
+
+
+
+
+
+
+
+
+
+// .icon-social {
+//   color: color('white');
+//   font-size: 50px;
+//   transition: all 250ms ease-in-out;
+// }
+//
+// .social-list {
+//   @include reset-list;
+//   display: flex;
+//
+//   li {
+//     background-color: color('black');
+//     margin-right: 1em;
+//     padding: 2em;
+//     border-radius: 50%;
+//
+//     &:hover {
+//       .icon-social {
+//         color: color('pink');
+//       }
+//     }
+//   }
+// }
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+// Flower
+////////////////////////////////////////////////////////////////////////////////
+
+.icon-flower {
+  font-size: 600px;
+}
+
+.petal {
+  color: color('pink');
+  // nth-child(2n)
+
+}
+
+.flower-center {
+  color: color('yellow');
+}
+
+
+
+
+
+
+.petal {
+  transform: scale(0);
+  animation: show-pedals 1s forwards;
+  transform-origin: 150px 150px;
+  $delay: 0s;
+
+  @for $i from 1 through 6 {
+    &:nth-child(#{$i}) {
+      animation-delay: $delay;
+    }
+    $delay: $delay + .25;
+  }
+}
+
+@keyframes show-pedals {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+// Graph
+////////////////////////////////////////////////////////////////////////////////
+
+
+.icon-graph {
+  font-size: 500px;
+
+}
+
+.large-graph {
+  color: color('pink');
+}
+
+.small-graph {
+  color: color('blue');
+  position: relative;
+  animation: graph-insert 1s forwards;
+}
+
+
+// Graph Animation (using full <svg>)
+@keyframes graph-insert {
+  0% {
+    opacity: 0;
+    transform: translateX(-8px) translateY(8px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
