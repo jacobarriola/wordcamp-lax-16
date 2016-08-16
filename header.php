@@ -25,10 +25,18 @@
 ?>
 
 
+<header class="site-header">
+  <div class="logo-wrapper">
+    <img src="https://placehold.it/200x50" alt="Logo">
+  </div>
+  <nav class="site-navigation">
+    <ul class="site-navigation-list">
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Portfolio</a></li>
+    </ul>
+  </nav>
+</header>
 
 
-
-
-
-
-  <div id="content" class="site-content">
+<div id="content" class="site-content">

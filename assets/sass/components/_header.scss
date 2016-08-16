@@ -1,0 +1,25 @@
+.site-header {
+  display: flex;
+  align-items: center;
+  background-color: orange;
+  padding: 1em;
+}
+
+.site-navigation {
+  margin-left: auto;
+}
+
+.site-navigation-list {
+  @include reset-list;
+  display: flex;
+
+  li {
+    font-size: .875em;
+    padding: .5em;
+    text-transform: uppercase;
+  }
+
+  a {
+    color: #fff;
+  }
+}

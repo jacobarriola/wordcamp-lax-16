@@ -14,9 +14,6 @@
 get_header(); ?>
 
 <div class="row column">
-	<div>Header component</div>
-
-
 	<div>
 		<h2>Testimonial component</h2>
 		<div class="testimonial-container">
