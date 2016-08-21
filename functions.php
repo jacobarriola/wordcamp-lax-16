@@ -132,31 +132,6 @@ add_action( 'wp_enqueue_scripts', 'flexbox_theme_styles' );
 endif;
 
 
-/**
- * Enqueue scripts.
- */
-function flexbox_theme_scripts() {
-
-	// Add Foundation JS to footer
-	// wp_enqueue_script( 'foundation-js',
-	// 	get_template_directory_uri() . '/assets/dist/js/foundation.js',
-	// 	array( 'jquery' ), '6.1.1', true
-	// );
-
-	// Add our concatenated JS file after Foundation
-	$handle = 'flexbox_theme_appjs';
-	$src =  get_template_directory_uri() . '/assets/dist/js/app.js';
-	$deps = array( 'jquery' );
-	$ver = filemtime( get_template_directory() . '/assets/dist/js/app.js');
-	$in_footer = true;
-	wp_enqueue_script( $handle, $src, $deps, $ver, $in_footer );
-
-	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
-		wp_enqueue_script( 'comment-reply' );
-	}
-}
-add_action( 'wp_enqueue_scripts', 'flexbox_theme_scripts' );
-
 
 /*******************************************************************************
 * Make YouTube and Vimeo oembed elements responsive. Add Foundation's .flex-video
