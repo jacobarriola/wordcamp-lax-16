@@ -1,0 +1,23 @@
+.logos-container {
+  background-color: #efefef;
+  padding: 2.5em 0;
+}
+
+.logo-list {
+  @include reset-list;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+
+  li {
+    flex: 0 1 auto;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100/6 * 1%;
+    text-align: center;
+  }
+}

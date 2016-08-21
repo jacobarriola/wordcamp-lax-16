@@ -2,6 +2,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2.5em;
 }
 
 .testimonial-img {
@@ -14,4 +18,6 @@
 
 .testimonial-name {
   padding-left: 1.25em;
+  margin-left: 1.25em;
+  border-left: 1px solid orange;
 }
