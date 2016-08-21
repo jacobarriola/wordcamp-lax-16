@@ -1,0 +1,25 @@
+.hero {
+  background: linear-gradient(to right, rgba(0,0,0,.2), rgba(0,0,0,.9)), url('https://unsplash.it/1500/400/?random') center / cover no-repeat #000;
+  height: 400px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-item {
+  color: color('white');
+
+  .button.hollow {
+    color: color('white');
+    border-color: color('white');
+    text-transform: uppercase;
+  }
+}
+
+
+.hero-title {
+  font-size: 2em;
+  margin-bottom: 1em;
+}

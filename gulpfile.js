@@ -35,7 +35,7 @@ gulp.task('browser-sync', function() {
 	];
 
 	browserSync.init(files, {
-		proxy: 'wordcamplax.dev'
+		proxy: 'wordpress-svg:8888'
 	});
 });
 
