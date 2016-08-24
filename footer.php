@@ -12,10 +12,6 @@
 
 </div><!-- #content -->
 
-<footer class="site-footer">
-  I'm the footer
-</footer>
-
 <?php wp_footer(); ?>
 </body>
 </html>
