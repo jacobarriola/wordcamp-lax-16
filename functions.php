@@ -118,6 +118,12 @@ add_action( 'widgets_init', 'flexbox_theme_widgets_init' );
 if ( !function_exists( 'flexbox_theme_styles' ) ) :
 
 	function flexbox_theme_styles() {
+
+		// Enqueue our Google Fonts
+		wp_enqueue_style( 'googlefonts',
+			'https://fonts.googleapis.com/css?family=Roboto'
+		);
+
 		// Enqueue our stylesheet
 		$handle = 'flexbox_theme_styles';
 		$src =  get_template_directory_uri() . '/assets/dist/css/app.css';
