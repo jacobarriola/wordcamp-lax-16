@@ -1,12 +1,19 @@
 .site-header {
   display: flex;
   align-items: center;
+  flex-direction: column;
   background-color: orange;
   padding: 1em;
+
+  @include breakpoint(medium) {
+    flex-direction: row;
+  }
 }
 
 .site-navigation {
-  margin-left: auto;
+  @include breakpoint(medium) {
+    margin-left: auto;
+  }
 }
 
 .site-navigation-list {
@@ -30,4 +37,9 @@
   font-size: 2em;
   line-height: 1;
   padding: 0 .25em .25em .25em;
+  margin-bottom: .25em;
+
+  @include breakpoint(medium) {
+    margin-bottom: 0;
+  }
 }
