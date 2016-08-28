@@ -121,7 +121,7 @@ if ( !function_exists( 'flexbox_theme_styles' ) ) :
 
 		// Enqueue our Google Fonts
 		wp_enqueue_style( 'googlefonts',
-			'https://fonts.googleapis.com/css?family=Roboto'
+			'https://fonts.googleapis.com/css?family=Roboto|Pacifico'
 		);
 
 		// Enqueue our stylesheet

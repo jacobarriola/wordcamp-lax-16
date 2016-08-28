@@ -26,8 +26,8 @@
 
 
 <header class="site-header">
-  <div class="logo-wrapper">
-    <img src="https://placehold.it/200x50" alt="Logo">
+  <div class="site-logo">
+    WP Agency
   </div>
   <nav class="site-navigation">
     <ul class="site-navigation-list">
