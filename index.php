@@ -20,7 +20,7 @@ get_header(); ?>
 
 
 <div class="posts-container">
-	<h2 class="row">Latest Posts</h2>
+	<h2 class="row posts-container-title">Latest Posts</h2>
 	<div class="post-item">
 		<div class="post-img"></div>
 		<div class="post-content">
