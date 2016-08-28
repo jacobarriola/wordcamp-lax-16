@@ -22,10 +22,15 @@
 }
 
 .post-img {
-  background: linear-gradient(to right, rgba(0,0,0,.2), rgba(0,0,0,.9)), url('https://unsplash.it/400/300/?random') center / cover no-repeat #000;
+  background: linear-gradient(to right, rgba(0,0,0,.2), rgba(0,0,0,.9)), url('../../img/post-1.jpeg') center / cover no-repeat #000;
   height: 300px;
   width: 50%;
   flex: 1 1 auto;
+
+  &.last {
+    background: linear-gradient(to right, rgba(0,0,0,.2), rgba(0,0,0,.9)), url('../../img/post-2.jpeg') center / cover no-repeat #000;
+
+  }
 }
 
 .post-content {
