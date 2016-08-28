@@ -1,23 +1,9 @@
 .site-header {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
   background-color: orange;
   padding: 1em;
-
-  @include breakpoint(medium) {
-    flex-direction: row;
-  }
-}
-
-.site-navigation {
-  @include breakpoint(medium) {
-    margin-left: auto;
-  }
 }
 
 .site-navigation-list {
-  @include reset-list;
   display: flex;
 
   li {

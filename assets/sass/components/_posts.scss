@@ -1,5 +1,4 @@
 .posts-container {
-  flex-direction: row;
   margin: 0 auto 2.5em auto;
   background: #eee;
   padding: 2.5em .9375em;
@@ -12,40 +11,19 @@
 
 
 .post-item {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   background-color: color('white');
   margin-bottom: 1.25em;
-
-
-
-  @include breakpoint(medium) {
-    flex-direction: row;
-
-    &:nth-child(odd) {
-      .post-img {
-        order: 2;
-      }
-    }
-  }
 }
 
 .post-img {
   background: linear-gradient(to right, rgba(0,0,0,.2), rgba(0,0,0,.9)), url('../../img/post-1.jpeg') center / cover no-repeat #000;
   height: 300px;
-  width: 100%;
-  flex: 1 1 auto;
 
   &.last {
     background: linear-gradient(to right, rgba(0,0,0,.2), rgba(0,0,0,.9)), url('../../img/post-2.jpeg') center / cover no-repeat #000;
-  }
-
-  @include breakpoint(medium) {
-    width: 50%;
   }
 }
 
@@ -54,12 +32,9 @@
 }
 
 .post-content {
-  width: 100%;
-  flex: 1 1 auto;
   padding: .9375em;
 
   @include breakpoint(medium) {
-    width: 50%;
     padding-top: 0;
     padding-bottom: 0;
   }
