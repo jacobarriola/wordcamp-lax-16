@@ -1,4 +1,41 @@
+// Set box-sizing globally to handle padding and border widths
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+	font-size: 100%;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-weight: 500;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+img {
+	// Grid defaults to get images and embeds to work properly
+	max-width: 100%;
+	height: auto;
+	-ms-interpolation-mode: bicubic;
+
+	// Get rid of gap under images by making them display: inline-block; by default
+	display: inline-block;
+	vertical-align: middle;
+}
+
+ul,
+ol {
+	margin-top: 0;
+}
+
 @import "colors";
 @import "grid";
 @import "utilities";
+@import "typography";
 @import "buttons";

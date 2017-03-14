@@ -1,31 +1,28 @@
 {
-  "devDependencies": {
-    "browser-sync": "^2.12.5",
-    "gulp": "^3.9.0",
-    "gulp-autoprefixer": "^3.1.0",
-    "gulp-notify": "^2.2.0",
-    "gulp-sass": "^2.3.1",
-    "gulp-size": "^2.1.0",
-    "gulp-sourcemaps": "^1.6.0"
-  },
-  "name": "Flexbox Theme",
-  "description": "Flexbox Theme",
+  "name": "wordcamp-lax-16",
   "version": "1.0.0",
+  "description": "This is the demo theme used in my WordCamp LAX 2016 conference talk about using Flexbox with WordPress",
   "main": "gulpfile.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "dependencies": {
+    "gulp-size": "^2.1.0"
   },
+  "devDependencies": {
+    "browser-sync": "^2.18.6",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-notify": "^2.2.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.3.0"
+  },
+  "scripts": {},
   "repository": {
     "type": "git",
-    "url": "https://github.com/ZeekInteractive/flexbox_theme"
+    "url": "git+https://github.com/jacobarriola/wordcamp-lax-16.git"
   },
-  "author": "Jacob Arriola",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/jacobarriola/wordcamp-lax-16/issues"
   },
-  "homepage": "https://github.com/jacobarriola/wordcamp-lax-16",
-  "dependencies": {
-    "foundation-sites": "=6.1.1"
-  }
+  "homepage": "https://github.com/jacobarriola/wordcamp-lax-16#readme"
 }

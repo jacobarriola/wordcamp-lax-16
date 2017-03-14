@@ -1,4 +1,27 @@
 // Typography
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
-$base-font-family: 'Roboto', sans-serif;
+$base-font-family: 'Avenir', sans-serif;
+
+body {
+	font-family: $base-font-family;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $base-font-family;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+
+	&:hover,
+	&:focus {
+		text-decoration: underline;
+	}
+}

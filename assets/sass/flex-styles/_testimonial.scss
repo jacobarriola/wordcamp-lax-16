@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
 
-  @include breakpoint(medium) {
+  @include larger-than(medium) {
     flex-direction: row;
     justify-content: center;
   }

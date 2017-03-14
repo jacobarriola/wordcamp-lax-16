@@ -30,7 +30,7 @@ gulp.task('browser-sync', function() {
 	];
 
 	browserSync.init(files, {
-		proxy: 'wordpress-lax-16.dev'
+		proxy: 'wordpress-demo.dev'
 	});
 });
 
@@ -58,7 +58,7 @@ gulp.task('styles', function() {
 		.pipe(gulp.dest(paths.destPath + 'css')) // Location of our app.css file
 		.pipe(browserSync.stream({match: '**/*.css'}))
 		.pipe(notify({
-			message: "✅ Styles task complete",
+			message: "Styles task complete",
 			onLast: true
 		}));
 });

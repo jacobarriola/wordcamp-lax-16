@@ -1,13 +1,15 @@
 <?php
-/**
- * The main template file.
- */
+
+use Demo\Components;
 
 get_header();
 
-get_template_part( 'components/hero' );
-get_template_part( 'components/posts' );
-get_template_part( 'components/testimonial' );
-get_template_part( 'components/logos' );
+echo Components\get_hero();
+
+echo Components\get_post_grid();
+
+echo Components\get_testimonial();
+
+echo Components\get_logos();
 
 get_footer();

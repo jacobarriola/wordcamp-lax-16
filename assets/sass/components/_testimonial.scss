@@ -17,7 +17,7 @@
 
 .testimonial-name {
 
-  @include breakpoint(medium) {
+  @include larger-than(medium) {
     margin-left: 1.25em;
     padding-left: 1.25em;
     border-left: 1px solid orange;
@@ -44,7 +44,7 @@
 
 .testimonial-name {
 
-  @include breakpoint(medium) {
+  @include larger-than(medium) {
     margin-left: 1.25em;
     padding-left: 1.25em;
     border-left: 1px solid orange;

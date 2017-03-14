@@ -1,21 +1,27 @@
 .posts-container {
-  margin: 0 auto 2.5em auto;
-  background: #eee;
+  //margin: 0 auto 2.5em auto;
+  //background: #eee;
   padding: 2.5em .9375em;
+  display: flex;
+	flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .posts-container-title {
   font-size: 1.75em;
   margin-bottom: 1.25em;
+	margin-top: 1.25em;
 }
 
-
 .post-item {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
   background-color: color('white');
-  margin-bottom: 1.25em;
+  flex: 0 0 auto;
+  margin-bottom: 1em;
+  width: calc(50% - 1em);
+
+	@include larger-than(large) {
+		width: calc(25% - 1em);
+	}
 }
 
 .post-img {
@@ -33,9 +39,4 @@
 
 .post-content {
   padding: .9375em;
-
-  @include breakpoint(medium) {
-    padding-top: 0;
-    padding-bottom: 0;
-  }
 }

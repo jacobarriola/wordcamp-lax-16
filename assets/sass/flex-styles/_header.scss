@@ -3,13 +3,13 @@
   align-items: center;
   flex-direction: column;
 
-  @include breakpoint(medium) {
+  @include larger-than(medium) {
     flex-direction: row;
   }
 }
 
 .site-navigation {
-  @include breakpoint(medium) {
+  @include larger-than(medium) {
     margin-left: auto;
   }
 }
