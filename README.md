@@ -10,4 +10,5 @@ This is the demo theme used in my WordCamp LAX 2016 conference talk about using 
 ## How to get started
 1. Clone or [download](https://github.com/ZeekInteractive/flexbox_theme/archive/master.zip "Download the flexbox_theme Zip") the project onto your `themes` directory `(./wp-content/themes)`
 2. From the theme directory, run `npm install` or `yarn`. All of the theme dependencies will be installed into `node_modules`.
-3. Run `gulp`
+3. Update the [proxy url](https://github.com/jacobarriola/wordcamp-lax-16/blob/master/gulpfile.js#L33) to whatever your local url
+4. Run `gulp`
