@@ -1,31 +1,37 @@
 .site-header {
-  background-color: orange;
-  padding: 1em;
+	background-color: color('green');
+	padding: 1em;
 }
 
 .site-navigation-list {
-  display: flex;
+	@include reset-list;
 
-  li {
-    font-size: .875em;
-    padding: .5em;
-    text-transform: uppercase;
-  }
+	li {
+		font-size: .875em;
+		padding: .5em;
+		text-transform: uppercase;
+	}
 
-  a {
-    color: #fff;
-  }
+	a {
+		color: #fff;
+	}
 }
 
 .site-logo {
-  color: color('white');
-  font-family: 'Pacifico';
-  font-size: 2em;
-  line-height: 1;
-  padding: 0 .25em .25em .25em;
-  margin-bottom: .25em;
+	color: color('white');
+	font-family: 'Pacifico';
+	font-size: 2em;
+	line-height: 1;
+	padding: 0 .25em .25em .25em;
+	margin-bottom: .25em;
 
-  @include larger-than(medium) {
-    margin-bottom: 0;
-  }
+	@include larger-than(medium) {
+		margin-bottom: 0;
+	}
+}
+
+.section-header {
+	font-size: 2em;
+	padding-left: .46875em;
+	padding-right: .46875em;
 }

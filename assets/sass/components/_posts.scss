@@ -1,42 +1,36 @@
 .posts-container {
-  //margin: 0 auto 2.5em auto;
-  //background: #eee;
-  padding: 2.5em .9375em;
-  display: flex;
-	flex-wrap: wrap;
-  justify-content: space-between;
+	@include row;
 }
 
 .posts-container-title {
-  font-size: 1.75em;
-  margin-bottom: 1.25em;
+	font-size: 1.75em;
+	margin-bottom: 1.25em;
 	margin-top: 1.25em;
 }
 
-.post-item {
-  background-color: color('white');
-  flex: 0 0 auto;
-  margin-bottom: 1em;
-  width: calc(50% - 1em);
+.post-title {
+	font-size: 1.5em;
+	margin-top: 0;
+	margin-bottom: .25em;
+}
 
-	@include larger-than(large) {
-		width: calc(25% - 1em);
+.post-item {
+	position: relative;
+
+	img {
+		filter: brightness(60%);
 	}
 }
 
-.post-img {
-  background: linear-gradient(to right, rgba(0,0,0,.2), rgba(0,0,0,.9)), url('../../img/post-1.jpeg') center / cover no-repeat #000;
-  height: 300px;
-
-  &.last {
-    background: linear-gradient(to right, rgba(0,0,0,.2), rgba(0,0,0,.9)), url('../../img/post-2.jpeg') center / cover no-repeat #000;
-  }
-}
-
-.post-title {
-  font-size: 1.75em;
-}
-
 .post-content {
-  padding: .9375em;
+	position: absolute;
+	bottom: .9375em;
+	left: .9375em;
+	right: .9375em;
+	color: color('white');
+
+	p {
+		line-height: 1.2;
+		margin-bottom: 0;
+	}
 }

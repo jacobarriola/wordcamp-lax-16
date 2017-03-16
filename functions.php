@@ -19,6 +19,14 @@ add_action( 'wp_enqueue_scripts', function() {
 	wp_enqueue_style( $handle, $src, $deps, $ver, $media );
 } );
 
+add_filter( 'excerpt_length', function() {
+	return 15;
+});
+
+add_filter( 'excerpt_more', function( $more ) {
+	return '...';
+});
+
 
 /*
  * Load our components
@@ -28,5 +36,5 @@ add_action( 'wp_enqueue_scripts', function() {
 require_once __DIR__ . '/components/post-card.php';
 require_once __DIR__ . '/components/post-grid.php';
 require_once __DIR__ . '/components/hero.php';
-require_once __DIR__ . '/components/testimonial.php';
 require_once __DIR__ . '/components/logos.php';
+require_once __DIR__ . '/components/cta.php';

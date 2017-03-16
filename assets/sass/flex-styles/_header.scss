@@ -1,20 +1,19 @@
 .site-header {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
 
-  @include larger-than(medium) {
-    flex-direction: row;
-  }
+	@include larger-than(medium) {
+		flex-direction: row;
+	}
 }
 
 .site-navigation {
-  @include larger-than(medium) {
-    margin-left: auto;
-  }
+	@include larger-than(medium) {
+		margin-left: auto;
+	}
 }
 
 .site-navigation-list {
-  @include reset-list;
-  display: flex;
+	display: flex;
 }

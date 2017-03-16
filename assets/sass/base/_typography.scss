@@ -5,6 +5,8 @@ $base-font-family: 'Avenir', sans-serif;
 
 body {
 	font-family: $base-font-family;
+	font-size: 16px;
+	font-weight: 300;
 }
 
 h1,
@@ -14,6 +16,10 @@ h4,
 h5,
 h6 {
 	font-family: $base-font-family;
+	font-weight: 500;
+	line-height: 1.2;
+	margin-top: 1.25em;
+	margin-bottom: 1.25em;
 }
 
 a {
@@ -24,4 +30,10 @@ a {
 	&:focus {
 		text-decoration: underline;
 	}
+}
+
+p {
+	line-height: 1.5;
+	margin-top: 0;
+	margin-bottom: 1.25em;
 }

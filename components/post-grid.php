@@ -2,7 +2,7 @@
 
 namespace Demo\Components;
 
-function get_post_grid( $posts_per_page = 4 ) {
+function get_post_grid( $posts_per_page = 8 ) {
 
 	$args = [
 		'post_type'      => 'post',
@@ -16,7 +16,9 @@ function get_post_grid( $posts_per_page = 4 ) {
 
 	ob_start(); ?>
 
-	<div class="posts-container">
+    <h2 class="row section-header">Our Latest Posts</h2>
+
+    <div class="posts-container">
 		<?php
 		while ( $query->have_posts() ) :
 
@@ -28,7 +30,8 @@ function get_post_grid( $posts_per_page = 4 ) {
 
 		wp_reset_postdata(); ?>
 	</div>
-	<?php
+
+    <?php
 	return ob_get_clean();
 }
 

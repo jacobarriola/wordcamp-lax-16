@@ -1,6 +1,7 @@
 <?php
 get_header(); ?>
-<div class="row column">
+
+<div class="row">
 	<?php
 	while ( have_posts() ) :
 
@@ -12,7 +13,7 @@ get_header(); ?>
 
 	endwhile;
 
-	echo Demo\Components\get_post_grid( 2 ); ?>
+	echo Demo\Components\get_post_grid( 4 ); ?>
 </div>
 <?php
 get_footer();
